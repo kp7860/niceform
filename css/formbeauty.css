@@ -1,0 +1,51 @@
+/*  Created on : 8 Jan, 2014, 1:36:12 PM Description: css3 properties explanation and Sass feature description Author     : krishnapal.singh
+*/
+/*
+@mixin keyframes($anim-name) { @-webkit-keyframes $anim-name { @content }; @-moz-keyframes $anim-name { paste the whole selector's css style in this block@content }; @-o-keyframes $anim-name { @content }; @keyframes $anim-name { @content };
+}
+*/
+body { font-family: "Open Sans", "Helvetica Neue",Arial,sans-serif; font-size: 13px; font-weight: normal; font-style: normal; }
+body * { margin: 0; padding: 0; }
+
+h3 { margin: 0 0 10px 0; text-align: center; font-size: 24px; }
+
+.form-container { width: 1020px; margin: 0 auto; background-color: #f2f2f2; -webkit-border-radius: 10px; -moz-border-radius: 10px; -ms-border-radius: 10px; -o-border-radius: 10px; border-radius: 10px; border: 1px solid #ccc; padding: 20px; }
+
+.form-row { padding: 0 15px; background-color: #fff; border: 1px solid #e9e9e9; margin-bottom: 5px; padding: 10px; }
+.form-row * { vertical-align: middle; outline: none; color: #333333; }
+.form-row .niceFormHide { display: none; }
+.form-row:before, .form-row:after { clear: both; content: ''; display: block; }
+.form-row label { font-weight: bold; min-width: 80px; display: inline-block; }
+.form-row input[type="text"], .form-row input[type="password"] { color: #333333; border: 1px solid #d5d5d5; font-size: 15px; padding: 0 5px; width: 240px; height: 30px; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; background-image: -webkit-linear-gradient(top, #f7f7f7, #eaeaea); background-image: -moz-linear-gradient(top, #f7f7f7, #eaeaea); background-image: -ms-linear-gradient(top, #f7f7f7, #eaeaea); background-image: -o-linear-gradient(top, #f7f7f7, #eaeaea); box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2); }
+.form-row input[type="text"]:hover, .form-row input[type="password"]:hover { box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3); }
+.form-row input[type="text"]:disabled, .form-row input[type="password"]:disabled { cursor: not-allowed; text-shadow: 1px 1px 1px #fff; background-image: -webkit-linear-gradient(top, #eaeaea, #eaeaea); background-image: -moz-linear-gradient(top, #eaeaea, #eaeaea); background-image: -ms-linear-gradient(top, #eaeaea, #eaeaea); background-image: -o-linear-gradient(top, #eaeaea, #eaeaea); color: #999999; }
+.form-row input[type="text"]:disabled:hover, .form-row input[type="password"]:disabled:hover { box-shadow: none; }
+.form-row input[type="button"], .form-row div.fileButton, .form-row input[type="reset"], .form-row input[type="submit"] { padding: 5px 15px; border: 1px solid #d5d5d5; background-image: -webkit-linear-gradient(top, #f2f2f2, #eeeeee); background-image: -moz-linear-gradient(top, #f2f2f2, #eeeeee); background-image: -ms-linear-gradient(top, #f2f2f2, #eeeeee); background-image: -o-linear-gradient(top, #f2f2f2, #eeeeee); -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; }
+.form-row input[type="button"]:hover, .form-row div.fileButton:hover, .form-row input[type="reset"]:hover, .form-row input[type="submit"]:hover { background-color: #fafafa; cursor: pointer; }
+.form-row div.niceFormWrapper { position: relative; display: inline-block; }
+.form-row div.browseImageBox { width: 30px; height: 30px; overflow: hidden; position: absolute; right: -40px; top: 0; }
+.form-row div.browseImageBox img { width: 100%; height: 100%; }
+.form-row div.select { border: 1px solid #d5d5d5; width: 250px; height: 30px; cursor: pointer; -moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; background-image: -webkit-linear-gradient(top, #f7f7f7, #eaeaea); background-image: -moz-linear-gradient(top, #f7f7f7, #eaeaea); background-image: -ms-linear-gradient(top, #f7f7f7, #eaeaea); background-image: -o-linear-gradient(top, #f7f7f7, #eaeaea); box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2); }
+.form-row div.select:hover, .form-row div.select:active, .form-row div.select:focus { box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3); }
+.form-row div.select .arrow-up, .form-row div.select .arrow-down { position: absolute; border-color: transparent  transparent #bbb; border-style: solid; border-width: 6px; width: 0; top: 6px; right: 6px; }
+.form-row div.select .arrow-down { border-color: #bbb transparent  transparent; top: 12px; }
+.form-row div.select span.optionText { padding-left: 10px; line-height: 30px; display: inline-block; }
+.form-row div.select div.option { background-color: #fafafa; max-height: 200px; width: 248px; overflow-y: auto; position: absolute; top: 30px; display: none; z-index: 2; border: 1px solid #d5d5d5; box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2); }
+.form-row div.select div.option ul { list-style: none; }
+.form-row div.select div.option ul li { line-height: 30px; border-bottom: 1px solid #d5d5d5; padding-left: 10px; }
+.form-row div.select div.option ul li:hover, .form-row div.select div.option ul li.hover { background-color: #eaeaea; }
+.form-row div.radio, .form-row div.checkbox { width: 18px; height: 18px; border: 1px solid #ccc; box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2); background-image: -webkit-linear-gradient(top, #f7f7f7, #eaeaea); background-image: -moz-linear-gradient(top, #f7f7f7, #eaeaea); background-image: -ms-linear-gradient(top, #f7f7f7, #eaeaea); background-image: -o-linear-gradient(top, #f7f7f7, #eaeaea); cursor: pointer; display: inline-block; }
+.form-row div.radio.checked:before, .form-row div.checkbox.checked:before { position: absolute; left: 3px; color: #999; }
+.form-row div.radio:hover, .form-row div.checkbox:hover { box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3); }
+.form-row div.radio { -webkit-border-radius: 100%; -moz-border-radius: 100%; -ms-border-radius: 100%; -o-border-radius: 100%; border-radius: 100%; }
+.form-row div.radio.checked:before { top: -4px; content: '\25cf'; font-size: 20px; }
+.form-row div.checkbox.checked:before { top: 0; content: '\2714'; font-size: 15px; }
+.form-row span.checkboxLabel, .form-row span.radioLabel { padding: 0 20px 0 5px; vertical-align: bottom; }
+
+::-webkit-input-placeholder { color: #bbb; font-style: italic; font-size: 15px; }
+
+:-moz-placeholder { /* Firefox 18- */ color: #bbb; }
+
+::-moz-placeholder { /* Firefox 19+ */ color: #bbb; }
+
+:-ms-input-placeholder { color: #bbb; }

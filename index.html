@@ -1,0 +1,84 @@
+<!DOCTYPE html><html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <link href="css/formbeauty.css" rel="stylesheet">
+    </head>
+    <body>
+        <form class="form-container">
+            <div id="formBeauty">
+                <h3>Form control</h3>    
+                <div class="form-row">
+                    <label>Text field</label>
+                    <input type="text" disabled value="this is disabled field">
+                </div>
+                <div class="form-row">
+                    <label>First Name</label>
+                    <input type="text">
+                </div> 
+                <div class="form-row">
+                    <label>Last Name</label>
+                    <input type="text" placeholder="Last Name">
+                </div>   
+                <div class="form-row">
+                    <label>Password</label>
+                    <input type="password">
+                </div>      
+                <div class="form-row">
+                    <label>Gender</label>
+                    <select>
+                        <option>Select Age</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                    </select>
+                </div>           
+                <div class="form-row">
+                    <label>City</label>
+                    <select>
+                        <option>Select City</option>
+                        <option>Option 1</option>
+                        <option>Option 2</option>
+                        <option>Option 3</option>
+                        <option>Option 4</option>
+                        <option>Option 5</option>
+                        <option>Option 6</option>
+                        <option>Option 7</option>
+                        <option>Option 8</option>
+                    </select>
+                </div>   
+                <div class="form-row">
+                    <label>Age</label>
+                    <input type="radio" name="a"> <span class="radioLabel">25</span>
+                    <input type="radio" name="a"> <span class="radioLabel">25</span>
+                    <input type="radio" name="a"> <span class="radioLabel">25</span>
+                </div>    
+                <div class="form-row">
+                    <label>Hobby</label>
+                    <input type="checkbox" name="a"> <span class="checkboxLabel">25</span>
+                    <input type="checkbox" name="a"> <span class="checkboxLabel">25</span>
+                    <input type="checkbox" name="a"> <span class="checkboxLabel">25</span>
+                </div>
+
+                <div class="form-row">
+                    <label>File name</label>
+                    <input type="file">
+                </div>   
+                <div class="form-row">
+                    <label>Button</label>
+                    <input type="button" value="Sample Button">
+                    <input type="submit" value="Submit Button">
+                    <input type="reset" value="Reset Button">
+                </div>
+            </div>
+        </form>
+        <script src="js/jquery.js"></script>
+        <script src="js/niceform.js"></script>
+        <script>
+            $(function() {
+                $('#formBeauty').niceform();
+            });
+        </script>
+    </body>
+</html>
